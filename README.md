@@ -262,4 +262,4 @@ Add your license here and include a `LICENSE` file in the repository.
 
 ---
 
-<p align="center"><b>DevStudio</b>: Build. Ship. Learn.<br/>Made by the student tech club at MITE, Mangalore.</p>
+<p align="center"><b>DevStudio</b>: Build. Ship. Learn.<br/>
