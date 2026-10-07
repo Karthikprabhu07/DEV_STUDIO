@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /director/
+Disallow: /profile/
+Disallow: /verify/
+Sitemap: https://devstudio.mite.ac.in/sitemap.xml

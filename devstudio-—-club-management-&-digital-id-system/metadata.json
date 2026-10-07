@@ -1,0 +1,6 @@
+{
+  "name": "DevStudio — Club Management & Digital ID System",
+  "description": "DevStudio at MITE: Club Management & Digital ID System for Dev Mates, Captains, and Directors.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

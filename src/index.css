@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* DEVSTUDIO Core Design Palette — Black, Blue, White Theme */
+    --bg-page: #000000;
+    --bg-surface: #0B0F19;
+    --border-default: #1A2333;
+
+    --accent-primary: #3B82F6;
+    --accent-teal: #38BDF8;
+    --accent-purple: #60A5FA;
+    --accent-amber: #93C5FD;
+
+    --text-primary: #FFFFFF;
+    --text-muted: #94A3B8;
+
+    --status-success: #38BDF8;
+    --status-pending: #60A5FA;
+    --status-destructive: #EF4444;
+
+    --on-accent: #000000;
+
+    /* RGB channels for full alpha/opacity utility compatibility */
+    --bg-page-rgb: 0, 0, 0;
+    --bg-surface-rgb: 11, 15, 25;
+    --border-default-rgb: 26, 35, 51;
+    --accent-primary-rgb: 59, 130, 246;
+    --accent-teal-rgb: 56, 189, 248;
+    --accent-purple-rgb: 96, 165, 250;
+    --accent-amber-rgb: 147, 197, 253;
+    --text-primary-rgb: 255, 255, 255;
+    --text-muted-rgb: 148, 163, 184;
+    --status-success-rgb: 56, 189, 248;
+    --status-pending-rgb: 96, 165, 250;
+    --status-destructive-rgb: 239, 68, 68;
+
+    /* Semantic Compatibility Variables */
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 222 39% 7%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 222 39% 7%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 222 39% 7%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 222 39% 7%;
+    --muted-foreground: 215 16% 65%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 217 33% 15%;
+    --input: 217 33% 15%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border-default);
+  }
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.011em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Code styling */
+code, pre {
+  font-family: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+}
+
+@keyframes laser-scan {
+  0% {
+    top: 5%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 92%;
+    opacity: 1;
+  }
+  100% {
+    top: 5%;
+    opacity: 0.8;
+  }
+}
+
+.animate-laser-scan {
+  animation: laser-scan 2.4s ease-in-out infinite;
+}
+
+/* Menu Hover White Border Rule */
+.nav-menu-item {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  border-width: 1px;
+}
+
+.nav-menu-item:hover {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.12);
+}
+
+/* Strictly Solid Blue Buttons */
+.btn-solid-blue {
+  background-color: #3B82F6 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.btn-solid-blue:hover {
+  background-color: #2563EB !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 14px rgba(59, 130, 246, 0.4) !important;
+}

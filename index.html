@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <meta property="og:title" content="DevStudio — Build. Ship. Learn.">
+    <meta property="og:description" content="The official technology club platform of MITE.">
+    <meta property="og:image" content="https://devstudio.mite.ac.in/og-image.png">
+    <meta property="og:url" content="https://devstudio.mite.ac.in">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DevStudio — Mangalore Institute of Technology & Engineering (MITE) student technology club for full-stack engineering and AI-assisted workflows. Build. Ship. Learn." />
+    <title>DEVSTUDIO — Build. Ship. Learn. | MITE</title>
+    
+    <link rel="preconnect" href="https://your-project.supabase.co" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-bg-page text-text-primary antialiased selection:bg-accent-primary/20 selection:text-text-primary">
+    <div id="root">
+      <style>
+        #initial-splash {
+          position: fixed; inset: 0; z-index: 9999; background: #000000;
+          display: flex; flex-direction: column; align-items: center; justify-content: center;
+          font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif;
+        }
+        .ds-logo-wrap {
+          width: 64px; height: 64px; border-radius: 16px; margin-bottom: 24px;
+          background: linear-gradient(to bottom right, rgba(59,130,246,0.2), rgba(56,189,248,0.1));
+          border: 1px solid rgba(59,130,246,0.3);
+          display: flex; align-items: center; justify-content: center;
+          color: #3B82F6;
+          position: relative;
+        }
+        .ds-logo-glow {
+          position: absolute; inset: -20px; background: rgba(59,130,246,0.2); filter: blur(20px); border-radius: 50%;
+          z-index: -1; animation: ds-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes ds-pulse { 0%, 100% { opacity: 0.5; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.1); } }
+        .ds-title { display: flex; align-items: center; gap: 8px; color: #FFFFFF; font-weight: 700; font-size: 24px; letter-spacing: -0.025em; }
+        .ds-badge { font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 9999px; background: rgba(59,130,246,0.15); color: #3B82F6; border: 1px solid rgba(59,130,246,0.3); }
+        .ds-tagline { font-size: 13px; color: #94A3B8; margin-top: 4px; font-weight: 500; letter-spacing: 0.025em; }
+        
+        .ds-progress-track { width: 200px; height: 2px; background: #1A2333; margin-top: 32px; overflow: hidden; border-radius: 2px; position: relative; }
+        .ds-progress-bar { position: absolute; left: 0; top: 0; bottom: 0; width: 30%; background: #3B82F6; border-radius: 2px; animation: ds-indeterminate 1.5s ease-in-out infinite; }
+        @keyframes ds-indeterminate { 0% { transform: translateX(-100%); } 100% { transform: translateX(400%); } }
+        
+        @media (prefers-reduced-motion: reduce) {
+          .ds-logo-glow { animation: none; display: none; }
+          .ds-progress-bar { animation: none; width: 100%; }
+        }
+      </style>
+      <div id="initial-splash">
+        <div class="ds-logo-wrap">
+          <div class="ds-logo-glow"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+        </div>
+        <div class="ds-title">DEVSTUDIO <span class="ds-badge">MITE</span></div>
+        <div class="ds-tagline">Build. Ship. Learn.</div>
+        <div class="ds-progress-track"><div class="ds-progress-bar"></div></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
