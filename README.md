@@ -32,6 +32,7 @@ DevStudio is a public marketing site, a member portal, a club management system,
 - [Deployment](#-deployment)
 - [Project principles](#-project-principles)
 - [Contributing](#-contributing)
+- [Author](#-author)
 - [License](#-license)
 
 ---
@@ -141,22 +142,21 @@ Attendance is **strictly manual** and taken only by **Dev Captains or Dev Direct
 
 ```mermaid
 flowchart LR
-    U[Member / Organizer / Admin] --> UI[DevStudio UI<br/>React + TypeScript + Vite]
-    V[Anyone with a QR code] --> VP[/verify/&lt;token&gt;<br/>public page/]
+    U["Dev Mate / Dev Captain / Dev Director"] --> UI["DevStudio UI<br/>React + TypeScript + Vite"]
+    Q["Anyone with a QR code"] --> VP["Public verify page<br/>/verify/token"]
 
-    UI -->|TanStack Query| SB[(Supabase)]
+    UI -->|"TanStack Query"| SB
     VP --> SB
 
-    subgraph SB_inner [Supabase]
-        AUTH[Auth<br/>@mite.ac.in trigger]
-        DB[(PostgreSQL<br/>+ RLS)]
-        ST[Storage]
-        EF[Edge Functions]
+    subgraph SB["Supabase"]
+        AUTH["Auth + email gating trigger"]
+        DB[("PostgreSQL + RLS")]
+        ST["Storage"]
+        EF["Edge Functions"]
     end
 
-    SB --- SB_inner
-    EF -->|daily sync| GH[GitHub API]
-    EF -->|push updates| W[Apple / Google Wallet]
+    EF -->|"daily sync"| GH["GitHub API"]
+    EF -->|"push updates"| W["Apple / Google Wallet"]
 ```
 
 ---
@@ -246,6 +246,15 @@ Contributions from MITE members are welcome.
 1. Create a branch: `git checkout -b feature/your-feature`
 2. Follow the principles above (RLS for authorization, no seed data, correct role names)
 3. Open a pull request describing what changed and why
+
+---
+
+## 👤 Author
+
+**Karthik Prabhu**
+B.E. Computer Science & Engineering student at the Mangalore Institute of Technology & Engineering (MITE), Moodabidri. Passionate about UI/UX design, web development, and emerging AI & web technologies.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karthik%20Prabhu-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karthik-prabhu-aba603330)
 
 ---
 
