@@ -249,12 +249,10 @@ Contributions from MITE members are welcome.
 
 ---
 
-## 👤 Author
-
 **Karthik Prabhu**
 B.E. Computer Science & Engineering student at the Mangalore Institute of Technology & Engineering (MITE), Moodabidri. Passionate about UI/UX design, web development, and emerging AI & web technologies.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karthik%20Prabhu-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karthik-prabhu-aba603330)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karthik%20Prabhu-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/karthik-prabhu-aba603330) [![GitHub](https://img.shields.io/badge/GitHub-Karthikprabhu07-181717?logo=github&logoColor=white)](https://github.com/Karthikprabhu07) [![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/__karthik_prabhu_/) [![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white)](mailto:karthikprabhu2534@gmail.com)
 
 ---
 
